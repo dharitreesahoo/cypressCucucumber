@@ -1,0 +1,8 @@
+
+/node_modules
+/allure-results
+/test-results
+/my-report/
+/data/~$TestData.xlsx
+/data/~$APITestData.xlsx
+/data/~$UITestData.xlsx
