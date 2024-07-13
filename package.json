@@ -1,0 +1,23 @@
+{
+  "name": "cypresscucumber",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:test": "cypress run",
+    "cy:smoke": "npx cypress run -e TAGS='@smoke' --headed",
+    "cy:regression": "npx cypress run -e TAGS='@regression' --headed"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^13.13.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "prettier": "^3.3.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDEfinitions": true,
+    "stepDefinitions": "cypress/e2e/PageObjects"
+  }
+}
